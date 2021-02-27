@@ -6,9 +6,6 @@ class Contact extends Component {
     if(this.props.data){
       var name = this.props.data.name;
       var street = this.props.data.address.street;
-      var city = this.props.data.address.city;
-      var state = this.props.data.address.state;
-      var zip = this.props.data.address.zip;
       var phone= this.props.data.phone;
       var email = this.props.data.email;
       var message = this.props.data.contactmessage;
@@ -27,7 +24,7 @@ class Contact extends Component {
 
             <div className="ten columns">
 
-                  <p className="lead">{message}</p>
+                  <p className="lead">Let's talk about everything!</p>
 
             </div>
 
@@ -82,7 +79,7 @@ class Contact extends Component {
 					   <p className="address">
 						   {name}<br />
 						   {street} <br />
-						   {city}, {state} {zip}<br />
+						   
 						   <span>{phone}</span>
 					   </p>
 				   </div>
@@ -92,20 +89,20 @@ class Contact extends Component {
                   <ul id="twitter">
                      <li>
                         <span>
-                        This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                        Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum
-                        <a href="#">http://t.co/CGIrdxIlI3</a>
+                        Ready To Buy cryptocurrency?
+1Des is  here to help anyone trade cryptocurrency with power of machine learning.Reardy? let's try together.
+
+1. Register for free on 1DES.com
+2. Connect Your Exchange
+3. Select the Model
+4. Run and Enjoy
+
+Any question, ask here or Send us an Email: hello@1des.com <br></br>
+                        <a href="#">https://twitter.com/aalinoosh</a>
                         </span>
-                        <b><a href="#">2 Days Ago</a></b>
+                        <b><a href="#">8 Days Ago</a></b>
                      </li>
-                     <li>
-                        <span>
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                        eaque ipsa quae ab illo inventore veritatis et quasi
-                        <a href="#">http://t.co/CGIrdxIlI3</a>
-                        </span>
-                        <b><a href="#">3 Days Ago</a></b>
-                     </li>
+                     
                   </ul>
 		         </div>
             </aside>

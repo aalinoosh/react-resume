@@ -11,11 +11,17 @@ class Header extends Component {
       var description= this.props.data.description;
       var city= this.props.data.address.city;
       var networks= this.props.data.social.map(function(network){
-        return <li key={network.name}><a href={network.url}><i className={network.className}></i></a></li>
+        return <li key={network.name}>
+           <a href={network.url}>
+           <i className={network.className}>
+           </i>
+           </a>
+         </li>
       })
     }
 
     return (
+
       <header id="home">
       <ParticlesBg type="circle" bg={true} />
       <nav id="nav-wrap">
@@ -37,10 +43,28 @@ class Header extends Component {
             <h1 className="responsive-headline">{name}</h1>
             <h3>{description}.</h3>
             <hr />
-            <ul className="social">
-               <a href={project} className="button btn project-btn"><i className="fa fa-book"></i>Project</a>
-               <a href={github} className="button btn github-btn"><i className="fa fa-github"></i>Github</a>
-            </ul>
+            <ul class="social">
+       <li><a href="https://www.linkedin.com/in/mary-feiz/">
+        <i class="fa fa-linkedin"></i></a></li>
+        
+        <li><a href="https://www.twitter.com/aalinoosh">
+        
+        <i class="fa fa-twitter"></i></a></li>
+
+        <li><a href=" https://www.instagram.com/aalinoosh/">
+        
+        <i class="fa fa-instagram"></i></a></li>
+
+        
+        <li>
+           <a href={github}><i class="fa fa-github"></i></a></li>
+
+           <li><a href="https://www.facebook.com/maryam.fza/">
+        <i class="fa fa-facebook"></i></a></li>  
+      </ul>
+
+
+            
          </div>
       </div>
 

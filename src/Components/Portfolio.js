@@ -5,7 +5,7 @@ class Portfolio extends Component {
 
     if (this.props.data) {
       var projects = this.props.data.projects.map(function (projects) {
-        var projectImage = 'images/portfolio/' + projects.image;
+        var projectImage = 'images/portfolio2/' + projects.image;
         
         return (
           <div key={projects.title} className="columns portfolio-item">
@@ -14,12 +14,20 @@ class Portfolio extends Component {
                 <img alt={projects.title} src={projectImage} />
                 <div className="overlay">
                   <div className="portfolio-item-meta">
-                    <h5>{projects.title}</h5>
+                    <h5 >{projects.title}</h5>
                     <p>{projects.category}</p>
                   </div>
                 </div>
               </a>
+              
+
             </div>
+
+            <a href={projects.url} title={projects.title}>
+            <h5 className="mt2 pt2" >{projects.title}</h5>
+            <p>{projects.category}</p>
+
+            </a>
           </div>
         )
       })
@@ -34,9 +42,12 @@ class Portfolio extends Component {
 
             <h1>Check Out Some of My Works.</h1>
 
-            <div id="portfolio-wrapper" className="bgrid-quarters s-bgrid-thirds cf">
+            <div id="portfolio-wrapper" className="bgrid-thirds s-bgrid-thirds cf">
               {projects}
+
+
             </div>
+
           </div>
         </div>
       </section>
